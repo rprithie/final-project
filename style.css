@@ -1,89 +1,98 @@
-*{
-    margin:0;
-    padding:0;
-    font-family: "poppins";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
 }
 
-header{
-    background-image: repeating-linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../2.jpg);
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    overflow-x: hidden;
-    position: relative;
+.main {
+  background-image: repeating-linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../2.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  position: relative;
+ 
+}
+/*-----------------logo--------------*/
+.nav-bar{
+  display: flex;
+  padding: 40px 120px;
+}
+.nav-logo {
+  width: 125px;
+}
+.nav-logo h4 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+/*---------x-------logo-------x-------*/
+
+/*-----------------links--------------*/
+.nav-links {
+  flex: 1;
 }
 
-ul{
-    float:right;
-    list-style-type: none;
-    margin-top: 25px;
-
+.nav-links ul {
+  margin-left: 50px;
+  display: inline;
 }
 
-ul li{
-   display: inline-block; 
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 25px;
 }
 
-ul li a{
-    text-decoration: none;
-    color: #fff;
-    padding: 5px 20px;
-    border: 1px solid #transparent;
-transition: 0.6s ease;
-letter-spacing: 2px;
+.nav-links ul a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  padding: 5px 20px;
+  border: 1px solid #transparent;
+  transition: 0.6s ease;
+}
+/*---------x--------links-------x-------*/
+
+/*------------------hover--------------*/
+ul li a:hover {
+  background-color: #fff;
+  color: #000;
 }
 
-ul li a:hover{
-    background-color: #fff;
-    color: #000;
+ul li.active a {
+  background-color: #fff;
+  color: #000;
 }
-ul li.active a{
-    background-color: #fff;
-    color: #000;
-}
-.logo{
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 20px;
-    margin-top: 25px;
-    display: inline-block;
-}
+/*---------x---------hover-------x-------*/
 
-.main{
-    max-width: 1200px;
-    margin: auto;
-}
-
-.title{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%)
-}
-
-.title h1{
-    color: #fff;
-    font-size: 70px;
-
-}
-
-.button{
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%,-50%)
-}
-
+/*-------------------button--------------*/
 .btn{
-    border: 1px solid #fff;
-    padding: 10px 30px;
-    color: #fff;
-    text-decoration: none;
-transition: 0.6s ease;
+  padding: 10px 20px;
+  border: 0;
+  background: rgb(230, 222, 222);
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.btn:hover{
-    background-color: #fff;
-    color: #000;
+.nav-links .btn{
+  float: right;
 }
+/*---------x----------button-------x-------*/
+
+/*-------------------banner--------------*/
+.banner-title{
+  margin: 80px 130px;
+  color: #fff; 
+}
+
+.banner-title p{
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+/*---------x----------banner-------x-------*/
