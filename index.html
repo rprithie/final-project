@@ -4,31 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Montserrat:wght@500&family=Oswald&family=Poppins:ital@0;1&display=swap" rel="stylesheet">
-    <title>Landing</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+    <title>Landing</title>
   </head>
+  
   <body>
-    <header>
       <div class="main">
         <div class="nav-bar">
           <div class="nav-logo">
             <h4>Wanderlust</h4>
           </div>
-          <div class="nav-links">
+          <div class="nav-links" id="nav-links">
+            <!-------------CloseMenu------------------>
+              <i class="fa fa-moon-o" onclick="closeMenu()"></i>
+            
             <ul>
             <a href="#"><li>Home</a></li>
             <a href="#"><li>Services</a></li>
-             <a href="#"><li>Gallery</a></li>
+            <a href="#"><li>Gallery</a></li>
             <a href="#"><li>About</a></li>
             </ul>
-            <button type="button" class="btn">Contact</button>
-          </div>
+       </div>
+          <!-------------showmenu------------------>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
         </div>
         <div class="banner-title">
-            <p>"Live with no excuses &, </br> travel with no regrets"</p>
+            <p>"Live with no excuses & </br> travel with no regrets"</p>
             <button type="button" class="btn">Explore</button>
+           
         </div>
-      </div>
-    </header>
+        <div class="vertical-bar">
+            <div class="search-icon">
+                <i class="fa fa-th-list"></i>
+                <i class="fa fa-search" ></i>
+            </div>
+            <div class="social-icons">
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-facebook" ></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-pinterest" ></i>
+            </div>
+        </div>
+      </div> 
+      
   </body>
+<script src="app.js"></script>
 </html>
